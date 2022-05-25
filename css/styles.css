@@ -345,7 +345,7 @@ img {
     cursor: pointer;
 }
 
-.form-field input {
+.form-field input:hover {
     border-color: var(--accent-color);
 }
 
