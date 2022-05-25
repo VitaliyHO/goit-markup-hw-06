@@ -268,7 +268,7 @@ img {
     pointer-events: none;
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.7);
     opacity: 0.4;
 }
@@ -277,9 +277,6 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-
-    width: 530px;
-    height: 580px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--white);
@@ -307,9 +304,81 @@ img {
     cursor: pointer;
 }
 
+.modal-button:hover,
+.modal-button:focus {
+    color: var(--accent-color);
+}
+
 .modal-button svg {
     width: 18px;
     height: 18px;
+}
+
+.modal-form {
+    padding: 40px;
+}
+
+.modal-form b {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field input {
+    padding: 12px 12px 12px 83px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-comments {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-comments::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.accept-checkbox {
+    margin-bottom: 30px;
+}
+
+.accept-checkbox-link {
+    color: var(--accent-color);
+}
+
+.modal-form-butoon {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.modal-form-butoon:hover,
+.modal-form-butoon:focus {
+    background-color: var(--button-hover-coolor);
+    cursor: pointer;
 }
 
 .preference {
@@ -562,7 +631,9 @@ img {
     color: var(--accent-color);
 }
 
-.subscribe {}
+.subscribe {
+    margin-right: 95px;
+}
 
 .subscribe-title {
     margin-bottom: 10px;
@@ -604,6 +675,46 @@ img {
     width: 20px;
     height: 20px;
     fill: currentColor;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.suscribe-label {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.subscribe-mail {
+    margin-right: 12px;
+    width: 360px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+.submit-button {
+    padding: 10px 30px;
+    /* display: flex; */
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.submit-button svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
 }
 
 /*! Стилі сторінки Portfolio */
