@@ -277,6 +277,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 530px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--white);
@@ -304,14 +305,15 @@ img {
     cursor: pointer;
 }
 
-.modal-button:hover,
-.modal-button:focus {
-    color: var(--accent-color);
-}
-
 .modal-button svg {
     width: 18px;
     height: 18px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus svg {
+    fill: var(--accent-color);
 }
 
 .modal-form {
@@ -319,6 +321,9 @@ img {
 }
 
 .modal-form b {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
     color: var(--title-color);
     font-weight: 700;
     font-size: 20px;
@@ -337,6 +342,11 @@ img {
     padding: 12px 12px 12px 83px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-field input {
+    border-color: var(--accent-color);
 }
 
 .form-comments {
@@ -345,6 +355,8 @@ img {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
+    resize: none;
 }
 
 .form-comments::placeholder {
@@ -701,7 +713,8 @@ img {
 }
 
 .submit-button {
-    padding: 10px 30px;
+    position: relative;
+    padding: 15px 65px 15px 30px;
     /* display: flex; */
     align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -712,6 +725,9 @@ img {
 }
 
 .submit-button svg {
+    position: absolute;
+    top: 10px;
+    right: 30px;
     width: 24px;
     height: 24px;
     fill: var(--white);
