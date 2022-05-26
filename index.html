@@ -85,11 +85,11 @@
               </label>
               <label>
                 <span class="lable">Комментарий</span>
-                <textarea class="form-comments" name="comments" id="comments" rows="5" placeholder="Введите текст"
-                  resize="none"></textarea>
+                <textarea class="form-comments" name="comments" id="comments" rows="5" placeholder="Введите текст">
+                </textarea>
               </label>
               <label class="checkbox-field">
-                <input class="accept-checkbox" type="checkbox" name="">
+                <input class="accept-checkbox" type="checkbox" name="checkbox">
                 <span class="custom-checkbox">
                   <svg>
                     <use href="./image/icons/icons.svg#check-on" width="16" height="15"></use>
@@ -428,19 +428,17 @@
           </li>
         </ul>
       </div>
-      <form>
+      <form class="suscribe-form">
         <label class="suscribe-field">
           <b class="suscribe-label">Подпишитесь на рассылку</b>
-          <div class="suscribe-form">
-            <input class="subscribe-mail" type="email" name="user-email" placeholder="E-mail">
-            <button class="submit-button" type="submit">
-              Подписаться
-              <svg>
-                <use href="./image/icons/icons.svg#send" width="24" height="24"></use>
-              </svg>
-            </button>
-          </div>
+          <input class="subscribe-mail" type="email" name="user-email" placeholder="E-mail">
         </label>
+        <button class="submit-button" type="submit">
+          Подписаться
+          <svg>
+            <use href="./image/icons/icons.svg#send" width="24" height="24"></use>
+          </svg>
+        </button>
       </form>
     </div>
   </footer>
