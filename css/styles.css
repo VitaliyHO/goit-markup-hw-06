@@ -769,19 +769,18 @@ img {
     fill: currentColor;
 }
 
-.subscribe-form {
+.suscribe-form {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    align-items: flex-end;
 }
 
 .suscribe-field {
-    display: flex;
-    flex-direction: column;
+    display: block;
     color: var(--white);
 }
 
 .suscribe-label {
+    display: block;
     text-transform: uppercase;
     margin-bottom: 20px;
 
@@ -800,11 +799,10 @@ img {
 .submit-button {
     position: relative;
     padding: 15px 65px 15px 30px;
-    /* display: flex; */
-    align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: none;
+    border-width: 1px;
+    border-color: transparent;
     background-color: var(--accent-color);
     color: var(--white);
 
