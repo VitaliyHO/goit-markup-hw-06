@@ -319,7 +319,7 @@ img {
 .modal-form {
     padding: 40px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
 }
 
 .modal-form b {
